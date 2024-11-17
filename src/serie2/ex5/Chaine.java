@@ -1,4 +1,4 @@
-package serie2.ex4.ex5;
+package serie2.ex5;
 
 import java.util.Scanner;
 

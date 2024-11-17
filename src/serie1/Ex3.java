@@ -15,6 +15,9 @@ public class Ex3 {
             case 1:
                 System.out.println("un");
                 break;
+            case 3:
+                System.out.println("un");
+                break;
             case 9:
                 System.out.println("neuf");
                 break;
