@@ -1,6 +1,7 @@
 package serie3.ex1;
 
 import javax.script.CompiledScript;
+import java.util.Scanner;
 
 public class PilInt {
     private int tab[], n , tmax;
@@ -11,11 +12,15 @@ public class PilInt {
         n = 0;
     }
     public void  affiche(){
-        System.out.println("Afficher les elements: ");
-        for (int i = 0; i < n; i++ ){
-            System.out.println(tab[i] + " ");
+        if(n == 0){
+            System.out.println("pile est vide");
+        }else {
+            System.out.println("Afficher les elements: ");
+            for (int i = 0; i < n; i++ ){
+                System.out.println(tab[i] + " ");
+            }
         }
-        System.out.println();
+
     }
     public void empiler(int a){
         if(n == tmax){
@@ -37,21 +42,39 @@ public class PilInt {
     }
 
     public static void main(String[] args){
+        System.out.println("----------------------------------------------------EXERCICE 1 / SERIE3----------------------------------------------------\n" +
+                "--------------ETUDIANT : BASSEM SAMAALI-------------- \n" +
+                "--------------GROUPE : A04-------------- \n" +
+                "--------------2024/2025--------------");
         PilInt pile = new PilInt();
-        pile.Initialiser(5);
 
-        pile.empiler(10);
-        pile.empiler(20);
-        pile.empiler(30);
+        System.out.print("donnez N de PIle: ");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
 
+        pile.Initialiser(n);
+
+        for (int i = 0; i < n; i++){
+            System.out.print("donnez element "+i+" = ");
+            int element = sc.nextInt();
+            pile.empiler(element);
+        }
         pile.affiche();
 
-        System.out.println("Element depile: " + pile.depiler());
+        System.out.print("how many time do u want to empiler : ");
+        int supelement = sc.nextInt();
+
+        for (int i = 0 ; i < supelement; i++){
+            pile.depiler();
+        }
         pile.affiche();
 
-        pile.depiler();
-        pile.depiler();
-        pile.depiler();
+
+
+
+        System.out.println("---------------------------------------------- \n" +
+                "----------------FIN D'EXERCICE----------------\n" +
+                "----------------------------------------------");
     }
 
 }

@@ -15,8 +15,9 @@ public class TestPoint {
         p.afficher();
 
         Scanner sc = new Scanner(System.in);
-
+        System.out.println("Entrez point a: ");
         float a = sc.nextFloat();
+        System.out.println("Entrez point b: ");
         float b = sc.nextFloat();
 
         p.deplacer(a, b);

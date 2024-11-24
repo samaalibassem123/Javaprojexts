@@ -30,7 +30,7 @@ public class Chaine {
             char letter = CH.charAt(i);
             if ( letter == 'A' || letter == 'I' || letter == 'O' || letter == 'E' || letter == 'U'){
                 VOY.add(ch.charAt(i));
-            }else {
+            }else if(!Character.isDigit(ch.charAt(i)) && ch.charAt(i) != ' '){
                 CONS.add(ch.charAt(i));
             }
         }
@@ -47,7 +47,7 @@ public class Chaine {
     public static String numerique(String ch){
         String res = "";
         for (int i = 0 ; i < ch.length() ; i++){
-            if(ch.charAt(i) == '0' || ch.charAt(i) == '1'|| ch.charAt(i) == '2'|| ch.charAt(i) == '3'|| ch.charAt(i) == '4'|| ch.charAt(i) == '5'|| ch.charAt(i) == '6'|| ch.charAt(i) == '7'|| ch.charAt(i) == '8'|| ch.charAt(i) == '9'){
+            if(Character.isDigit(ch.charAt(i))){
                 res += " "+ ch.charAt(i);
             }
         }

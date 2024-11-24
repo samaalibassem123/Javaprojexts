@@ -6,6 +6,10 @@ public class Employer {
     private float salaire;
     private Service service;
 
+    public Employer(String nom, float salaire){
+        this.nom = nom;
+        this.salaire = salaire;
+    }
     /*Getters*/
     public String getNom(){
         return nom;

@@ -8,6 +8,10 @@ public class Service {
     private Employer chefService;
     private Vector<Employer> employers = new Vector<Employer>();
 
+    public Service(String nom, int tel){
+        this.nom = nom;
+        this.tel = tel;
+    }
     /*Getters*/
     public String getNom() {
         return nom;
@@ -63,6 +67,6 @@ public class Service {
 
     /*To string*/
     public String toString() {
-        return "nom chef = "+nom+", employers = ";
+        return "nom chef = "+chefService.getNom()+", employers = "+employers.size();
     }
 }

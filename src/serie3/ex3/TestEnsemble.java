@@ -2,6 +2,10 @@ package serie3.ex3;
 
 public class TestEnsemble {
     public static void main(String[] args){
+        System.out.println("----------------------------------------------------EXERCICE 3 / SERIE3----------------------------------------------------\n" +
+                "--------------ETUDIANT : BASSEM SAMAALI-------------- \n" +
+                "--------------GROUPE : A04-------------- \n" +
+                "--------------2024/2025--------------");
         EnsembleStr ensemble1 = new EnsembleStr();
         EnsembleStr ensemble2 = new EnsembleStr();
 
@@ -20,6 +24,8 @@ public class TestEnsemble {
 
         System.out.println("index of mot bassem in ensemble 1 = "+ensemble1.appartient("Bassem"));
 
-
+        System.out.println("---------------------------------------------- \n" +
+                "----------------FIN D'EXERCICE----------------\n" +
+                "----------------------------------------------");
     }
 }
