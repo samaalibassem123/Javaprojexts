@@ -4,6 +4,7 @@ import serie2.ex1.TestTemps;
 import serie2.ex2.TestRobot;
 import serie2.ex3.TestPoint;
 import serie2.ex4.Rectangle;
+import serie2.ex5.Chaine;
 import serie3.ex2.Test;
 import serie4.ex1.TestPointS4;
 
@@ -65,6 +66,7 @@ public class Main {
                                 "----- 2 - EXERCICE 2 \n" +
                                 "----- 3 - EXERCICE 3 \n" +
                                 "----- 4 - EXERCICE 4 \n" +
+                                "----- 5 - EXERCICE 5 \n" +
                                 "----- 0 - RETOUR \n");
                         System.out.print("Réponse: ");
                         ExerciceS2 = input.nextInt();
@@ -80,6 +82,9 @@ public class Main {
                                 break;
                             case 4:
                                 Rectangle.main(args);
+                                break;
+                            case 5:
+                                Chaine.main(args);
                                 break;
                             case 0:
                                 break;

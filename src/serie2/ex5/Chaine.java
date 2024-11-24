@@ -38,13 +38,39 @@ public class Chaine {
         for (char letters : VOY){
             System.out.print(letters+" ,");
         }
-        System.out.println("\n CONS :");
+        System.out.println(" ");
+        System.out.println("CONS :");
         for (char letters : CONS){
             System.out.print(letters+" ,");
         }
     }
+    public static String numerique(String ch){
+        String res = "";
+        for (int i = 0 ; i < ch.length() ; i++){
+            if(ch.charAt(i) == '0' || ch.charAt(i) == '1'|| ch.charAt(i) == '2'|| ch.charAt(i) == '3'|| ch.charAt(i) == '4'|| ch.charAt(i) == '5'|| ch.charAt(i) == '6'|| ch.charAt(i) == '7'|| ch.charAt(i) == '8'|| ch.charAt(i) == '9'){
+                res += " "+ ch.charAt(i);
+            }
+        }
+        return res;
+    }
+
+    public static String codage(String ch){
+        String res = "";
+        for (int i = 0; i < ch.length(); i++){
+            if (i % 2 == 0){
+                res +=  (char)(ch.charAt(i)+1);
+            }else{
+                res += ch.charAt(i);
+            }
+        }
+        return  res;
+    }
 
     public static void main(String[] args){
+        System.out.println("----------------------------------------------------EXERCICE 5 / SERIE2----------------------------------------------------\n" +
+                "--------------ETUDIANT : BASSEM SAMAALI-------------- \n" +
+                "--------------GROUPE : A04-------------- \n" +
+                "--------------2024/2025--------------");
         Scanner input = new Scanner(System.in);
 
         System.out.print("donnez ch : ");
@@ -52,6 +78,17 @@ public class Chaine {
 
         System.out.println("nombre de mot  = "+nbr_mot(ch));
         cons_voy(ch);
+        System.out.println(" ");
+        System.out.println("Numerique: "+numerique(ch));
+
+        System.out.println("Codage: "+codage(ch));
+
+        System.out.println("---------------------------------------------- \n" +
+                "----------------FIN D'EXERCICE----------------\n" +
+                "----------------------------------------------");
+
+
+
     }
 
 
