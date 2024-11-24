@@ -5,8 +5,12 @@ import serie2.ex2.TestRobot;
 import serie2.ex3.TestPoint;
 import serie2.ex4.Rectangle;
 import serie2.ex5.Chaine;
+import serie3.ex1.PilInt;
 import serie3.ex2.Test;
+import serie3.ex3.TestEnsemble;
 import serie4.ex1.TestPointS4;
+import serie4.ex3.TestEx3;
+import serie4.ex4.TestFrome;
 
 import java.util.Scanner;
 
@@ -107,13 +111,13 @@ public class Main {
 
                         switch (ExerciceS3){
                             case 1:
-                                //do the work
+                                PilInt.main(args);
                                 break;
                             case 2:
                                 Test.main(args);
                                 break;
                             case 3:
-                                //do the work
+                                TestEnsemble.main(args);
                                 break;
                             case 0:
                                 break;
@@ -140,10 +144,10 @@ public class Main {
                                 TestPointS4.main(args);
                                 break;
                             case 2:
-                                //do the work
+                                TestEx3.main(args);
                                 break;
                             case 3:
-                                //do the work
+                                TestFrome.main(args);
                                 break;
                             case 0:
                                 break;

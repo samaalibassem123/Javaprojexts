@@ -33,11 +33,22 @@ public class Service {
         this.tel = tel;
     }
     public void setChefService(Employer chefService) {
-        this.chefService = chefService;
+        if(chefService.getService() == this){
+            this.chefService =  chefService;
+            chefService.setGrade("chef");
+        }else{
+            chefService.getService().eliminerEmploye(chefService);
+            AffecterEmployer(chefService);
+            this.chefService= chefService;
+            chefService.setGrade("chef");
+        }
     }
 
     public void AffecterEmployer(Employer employer){
-        employers.addElement(employer);
+        if(!employers.contains(employer)){
+            employer.setService(this);
+            employers.addElement(employer);
+        }
     }
     public void eliminerEmploye(Employer employer){
         int i = 0;
