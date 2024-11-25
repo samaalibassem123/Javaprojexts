@@ -16,37 +16,30 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int serie;
-
-        System.out.println("----------------------------------------------------PROJET DE PROGRAMMATION OBJET ORIENTEE JAVA----------------------------------------------------\n" +
-                "--------------ETUDIANT : BASSEM SAMAALI-------------- \n" +
-                "--------------GROUPE : A04-------------- \n" +
-                "--------------2024/2025--------------");
-
+        System.out.println("******yassin ben romthan******\n" + "******Groupe A02******\n" );
+        Scanner sc = new Scanner(System.in);
+        int s;
         do{
-
-            System.out.println("SECLECTIONEZ UNE SERIE \n" +
-                    "1 - SERIE 1 \n" +
-                    "2 - SERIE 2 \n" +
-                    "3 - SERIE 3 \n" +
-                    "4 - SERIE 4 \n" +
-                    "5 - QUITTER \n");
-            System.out.print("Réponse: ");
-            serie = input.nextInt();
-
-            switch (serie){
+            System.out.println("selectionez serie \n" +
+                    "1 = serie 1 \n" +
+                    "2 = serie 2 \n" +
+                    "3 = serie 3 \n" +
+                    "4 = serie 4 \n" +
+                    "5 = quitter \n");
+            System.out.print("saisie = ");
+            s = sc.nextInt();
+            switch (s){
                 case 1 :
-                    int ExerciceS1;
+                    int Ex;
                     do {
-                        System.out.println("-----SELECTIONNEZ UNE EXERCICE \n" +
-                                "----- 1 - EXERCICE 4 \n" +
-                                "----- 2 - EXERCICE 5 \n" +
-                                "----- 0 - RETOUR \n");
-                        System.out.print("Réponse: ");
-                        ExerciceS1 = input.nextInt();
+                        System.out.println("selectionez  exercice \n" +
+                                "1 = exercice 4 \n" +
+                                "2 = exercice 5 \n" +
+                                "0 = retourner \n");
+                        System.out.print("saisie = ");
+                        Ex = sc.nextInt();
 
-                        switch (ExerciceS1){
+                        switch (Ex){
                             case 1:
                                 Ex4.main(args);
                                 break;
@@ -56,25 +49,25 @@ public class Main {
                             case 0:
                                 break;
                             default:
-                                System.out.println("!!!!!!!!!!!!!!!!!!ENTREZ UN NOBMRE COMME LE MENU INDIQUE!!!!!!!!!!!!!!!!!!");
+                                System.out.println("!!!!!!!!!!!!!!!!!!entrez un nombre comme le menu indique!!!!!!!!!!!!!!!!!!");
                                 break;
                         }
-                    }while (ExerciceS1 != 0);
+                    }while (Ex != 0);
                     break;
 
                 case 2 :
-                    int ExerciceS2;
+                    int Ex2;
                     do {
-                        System.out.println("-----SELECTIONNEZ UNE EXERCICE \n" +
-                                "----- 1 - EXERCICE 1 \n" +
-                                "----- 2 - EXERCICE 2 \n" +
-                                "----- 3 - EXERCICE 3 \n" +
-                                "----- 4 - EXERCICE 4 \n" +
-                                "----- 5 - EXERCICE 5 \n" +
-                                "----- 0 - RETOUR \n");
-                        System.out.print("Réponse: ");
-                        ExerciceS2 = input.nextInt();
-                        switch (ExerciceS2){
+                        System.out.println("selectionez un exercice \n" +
+                                "1 = exercice 1 \n" +
+                                "2 = exercice 2 \n" +
+                                "3 = exercice 3 \n" +
+                                "4 = exercice 4 \n" +
+                                "5 = exercice 5 \n" +
+                                "0 = retournez \n");
+                        System.out.print("saisie = ");
+                        Ex2 = sc.nextInt();
+                        switch (Ex2){
                             case 1:
                                 TestTemps.main(args);
                                 break;
@@ -93,23 +86,23 @@ public class Main {
                             case 0:
                                 break;
                             default:
-                                System.out.println("!!!!!!!!!!!!!!!!!!ENTREZ UN NOBMRE COMME LE MENU INDIQUE!!!!!!!!!!!!!!!!!!");
+                                System.out.println("!!!!!!!!!!!!!!!!!!entrez un nombre comme le menu indique!!!!!!!!!!!!!!!!!!");
                                 break;
                         }
-                    }while (ExerciceS2 != 0);
+                    }while (Ex2 != 0);
                     break;
                 case 3 :
-                    int ExerciceS3;
+                    int Ex3;
                     do {
-                        System.out.println("-----SELECTIONNEZ UNE EXERCICE \n" +
-                                "----- 1 - EXERCICE 1 \n" +
-                                "----- 2 - EXERCICE 2 \n" +
-                                "----- 3 - EXERCICE 3 \n" +
-                                "----- 0 - RETOUR \n");
-                        System.out.print("Réponse: ");
-                        ExerciceS3 = input.nextInt();
+                        System.out.println("selectionnez une exercice \n" +
+                                "1 = exercice  \n" +
+                                "2 = exercice 2 \n" +
+                                "3 = exercie 3 \n" +
+                                "0 = retournez \n");
+                        System.out.print("saisie = ");
+                        Ex3 = sc.nextInt();
 
-                        switch (ExerciceS3){
+                        switch (Ex3){
                             case 1:
                                 PilInt.main(args);
                                 break;
@@ -122,24 +115,24 @@ public class Main {
                             case 0:
                                 break;
                             default:
-                                System.out.println("!!!!!!!!!!!!!!!!!!ENTREZ UN NOBMRE COMME LE MENU INDIQUE!!!!!!!!!!!!!!!!!!");
+                                System.out.println("!!!!!!!!!!!!!!!!!!entrez un nombre comme le menu indique!!!!!!!!!!!!!!!!!!");
                                 break;
                         }
-                    }while (ExerciceS3 != 0);
+                    }while (Ex3 != 0);
                     break;
 
                 case 4 :
-                    int ExerciceS4;
+                    int Ex4;
                     do {
-                        System.out.println("-----SELECTIONNEZ UNE EXERCICE \n" +
-                                "----- 1 - EXERCICE 1 \n" +
-                                "----- 2 - EXERCICE 3 \n" +
-                                "----- 3 - EXERCICE 4 \n" +
-                                "----- 0 - RETOUR \n");
-                        System.out.print("Réponse: ");
-                        ExerciceS4 = input.nextInt();
+                        System.out.println("selctionnez exercice \n" +
+                                "1 = exercice 1 \n" +
+                                "2 = exercice 3 \n" +
+                                "3 = exercice 4 \n" +
+                                "0 = retournez \n");
+                        System.out.print("saisie");
+                        Ex4 = sc.nextInt();
 
-                        switch (ExerciceS4){
+                        switch (Ex4){
                             case 1:
                                 TestPointS4.main(args);
                                 break;
@@ -152,19 +145,19 @@ public class Main {
                             case 0:
                                 break;
                             default:
-                                System.out.println("!!!!!!!!!!!!!!!!!!ENTREZ UN NOBMRE COMME LE MENU INDIQUE!!!!!!!!!!!!!!!!!!");
+                                System.out.println("!!!!!!!!!!!!!!!!!!entrez un nombre comme le menu indique!!!!!!!!!!!!!!!!!!");
                                 break;
                         }
-                    }while (ExerciceS4 != 0);
+                    }while (Ex4 != 0);
                     break;
                 case 5 :
                     System.out.println("----------------FIN----------------");
                     break;
                 default:
-                    System.out.println("!!!!!!!!!!!!!!!!!!ENTREZ UN NOBMRE COMME LE MENU INDIQUE!!!!!!!!!!!!!!!!!!");
+                    System.out.println("!!!!!!!!!!!!!!!!!!entrez un nombre comme le menu indique!!!!!!!!!!!!!!!!!!");
                     break;
             }
-        }while(serie != 5);
+        }while(s != 5);
 
 
 

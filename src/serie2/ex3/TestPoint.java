@@ -6,18 +6,15 @@ import java.util.Scanner;
 public class TestPoint {
 
     public static void main(String[] args) {
-        System.out.println("----------------------------------------------------EXERCICE 3 / SERIE2----------------------------------------------------\n" +
-                "--------------ETUDIANT : BASSEM SAMAALI-------------- \n" +
-                "--------------GROUPE : A04-------------- \n" +
-                "--------------2024/2025--------------");
+
         Point p = new Point();
 
         p.afficher();
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Entrez point a: ");
+        System.out.print("Entrez point a: ");
         float a = sc.nextFloat();
-        System.out.println("Entrez point b: ");
+        System.out.print("Entrez point b: ");
         float b = sc.nextFloat();
 
         p.deplacer(a, b);
@@ -26,9 +23,7 @@ public class TestPoint {
 
         System.out.println("Affichage du Point : " + p);
 
-        System.out.println("---------------------------------------------- \n" +
-                "----------------FIN D'EXERCICE----------------\n" +
-                "----------------------------------------------");
+
 
 
     }

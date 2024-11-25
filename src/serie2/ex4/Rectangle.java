@@ -30,10 +30,7 @@ public class Rectangle {
     }
 
     public static void main(String[] args){
-        System.out.println("----------------------------------------------------EXERCICE 4 / SERIE2----------------------------------------------------\n" +
-                "--------------ETUDIANT : BASSEM SAMAALI-------------- \n" +
-                "--------------GROUPE : A04-------------- \n" +
-                "--------------2024/2025--------------");
+
         Rectangle rect = new Rectangle(5.4f,3.5f);
         Rectangle rect2 = new Rectangle();
         rect.affiche();
@@ -44,9 +41,7 @@ public class Rectangle {
         rect3.modifierRectangle(20.6f, 15);
 
         //Q4 on obtient l = 0.0f and L = 0.0f
-        System.out.println("---------------------------------------------- \n" +
-                "----------------FIN D'EXERCICE----------------\n" +
-                "----------------------------------------------");
+
 
     }
 

@@ -42,10 +42,7 @@ public class PilInt {
     }
 
     public static void main(String[] args){
-        System.out.println("----------------------------------------------------EXERCICE 1 / SERIE3----------------------------------------------------\n" +
-                "--------------ETUDIANT : BASSEM SAMAALI-------------- \n" +
-                "--------------GROUPE : A04-------------- \n" +
-                "--------------2024/2025--------------");
+
         PilInt pile = new PilInt();
 
         System.out.print("donnez N de PIle: ");
@@ -70,11 +67,6 @@ public class PilInt {
         pile.affiche();
 
 
-
-
-        System.out.println("---------------------------------------------- \n" +
-                "----------------FIN D'EXERCICE----------------\n" +
-                "----------------------------------------------");
     }
 
 }

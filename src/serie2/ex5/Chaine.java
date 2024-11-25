@@ -67,10 +67,7 @@ public class Chaine {
     }
 
     public static void main(String[] args){
-        System.out.println("----------------------------------------------------EXERCICE 5 / SERIE2----------------------------------------------------\n" +
-                "--------------ETUDIANT : BASSEM SAMAALI-------------- \n" +
-                "--------------GROUPE : A04-------------- \n" +
-                "--------------2024/2025--------------");
+
         Scanner input = new Scanner(System.in);
 
         System.out.print("donnez ch : ");
@@ -82,12 +79,6 @@ public class Chaine {
         System.out.println("Numerique: "+numerique(ch));
 
         System.out.println("Codage: "+codage(ch));
-
-        System.out.println("---------------------------------------------- \n" +
-                "----------------FIN D'EXERCICE----------------\n" +
-                "----------------------------------------------");
-
-
 
     }
 

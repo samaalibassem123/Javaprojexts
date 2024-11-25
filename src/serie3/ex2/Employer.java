@@ -1,43 +1,47 @@
 package serie3.ex2;
 
 public class Employer {
-    private String nom;
-    private String grade;
-    private float salaire;
-    private Service service;
 
-    public Employer(String nom, float salaire){
-        this.nom = nom;
-        this.salaire = salaire;
-    }
-    /*Getters*/
-    public String getNom(){
-        return nom;
-    }
-    public String getGrade(){
-        return grade;
-    }
-    public Service getService(){
-        return service;
-    }
-    public float getSalaire(){
-        return salaire;
+    private String nom, grade;
+    private Float salaire;
+    private Service myService;
+
+    public String getNom() {
+        return this.nom;
     }
 
-    /*Setters*/
-    public void setGrade( String grade){
-        this.grade = grade;
-    }
-    public void setService(Service service){
-        this.service = service;
-    }
-    public void setSalire(float salaire){
-        this.salaire = salaire;
+    public String getGrade() {
+        return this.grade;
     }
 
-    /*to string*/
+    public void setGrade(String newGrade) {
+        this.grade = newGrade;
+    }
+
+    public Service getMyService() {
+        return this.myService;
+    }
+
+    public void setMyService(Service newService) {
+        this.myService = newService;
+    }
+
+    public Float getSalaire() {
+        return this.salaire;
+    }
+
+    public void setSalaire(Float newSalaire) {
+        this.salaire = newSalaire;
+    }
+
     public String toString() {
-        return "nom = "+nom+", grade = "+grade+", salaire = "+salaire;
+        return "Nom : " + this.nom + ", Grade : " + this.grade + ", Salaire : " + this.salaire;
     }
 
+    public Employer(String a, String b, float c) {
+        this.nom = a;
+        this.grade = b;
+        this.salaire = c;
+    }
 }
+

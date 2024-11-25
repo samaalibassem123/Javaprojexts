@@ -2,11 +2,7 @@ package serie1;
 
 public class Ex5 {
     public static void main(String[] args){
-        //MSG AFFICHE AU DEBUT D'EXERCICE
-        System.out.println("----------------------------------------------------EXERCICE 5 / SERIE1----------------------------------------------------\n" +
-                "--------------ETUDIANT : BASSEM SAMAALI-------------- \n" +
-                "--------------GROUPE : A04-------------- \n" +
-                "--------------2024/2025--------------");
+
 
         int n1 = Integer.parseInt(args[0]);
         int n2 = Integer.parseInt(args[2]);
@@ -26,10 +22,7 @@ public class Ex5 {
                 }
                 break;
         }
-        //MESSAGE AFFICHER EN FIN D'EXERCICE
-        System.out.println("---------------------------------------------- \n" +
-                "----------------FIN D'EXERCICE----------------\n" +
-                "----------------------------------------------");
+
 
     }
 }
