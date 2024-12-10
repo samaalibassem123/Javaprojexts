@@ -16,27 +16,27 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("******yassin ben romthan******\n" + "******Groupe A02******\n" );
+        System.out.println("******khalil Abessi******\n" + "******Groupe A01******\n" );
         Scanner sc = new Scanner(System.in);
         int s;
         do{
             System.out.println("selectionez serie \n" +
-                    "1 = serie 1 \n" +
-                    "2 = serie 2 \n" +
-                    "3 = serie 3 \n" +
-                    "4 = serie 4 \n" +
-                    "5 = quitter \n");
-            System.out.print("saisie = ");
+                    "1 . serie 1 \n" +
+                    "2 . serie 2 \n" +
+                    "3 . serie 3 \n" +
+                    "4 . serie 4 \n" +
+                    "5 . quitter \n");
+            System.out.print("entrez = ");
             s = sc.nextInt();
             switch (s){
                 case 1 :
                     int Ex;
                     do {
                         System.out.println("selectionez  exercice \n" +
-                                "1 = exercice 4 \n" +
-                                "2 = exercice 5 \n" +
-                                "0 = retourner \n");
-                        System.out.print("saisie = ");
+                                "1 . exercice 4 \n" +
+                                "2 . exercice 5 \n" +
+                                "0 . retourner \n");
+                        System.out.print("entrez = ");
                         Ex = sc.nextInt();
 
                         switch (Ex){
@@ -59,13 +59,13 @@ public class Main {
                     int Ex2;
                     do {
                         System.out.println("selectionez un exercice \n" +
-                                "1 = exercice 1 \n" +
-                                "2 = exercice 2 \n" +
-                                "3 = exercice 3 \n" +
-                                "4 = exercice 4 \n" +
-                                "5 = exercice 5 \n" +
-                                "0 = retournez \n");
-                        System.out.print("saisie = ");
+                                "1 . exercice 1 \n" +
+                                "2 . exercice 2 \n" +
+                                "3 . exercice 3 \n" +
+                                "4 . exercice 4 \n" +
+                                "5 . exercice 5 \n" +
+                                "0 . retournez \n");
+                        System.out.print("entrez = ");
                         Ex2 = sc.nextInt();
                         switch (Ex2){
                             case 1:
@@ -95,11 +95,11 @@ public class Main {
                     int Ex3;
                     do {
                         System.out.println("selectionnez une exercice \n" +
-                                "1 = exercice  \n" +
-                                "2 = exercice 2 \n" +
-                                "3 = exercie 3 \n" +
-                                "0 = retournez \n");
-                        System.out.print("saisie = ");
+                                "1 . exercice  \n" +
+                                "2 . exercice 2 \n" +
+                                "3 . exercie 3 \n" +
+                                "0 . retournez \n");
+                        System.out.print("entrez = ");
                         Ex3 = sc.nextInt();
 
                         switch (Ex3){
@@ -125,11 +125,11 @@ public class Main {
                     int Ex4;
                     do {
                         System.out.println("selctionnez exercice \n" +
-                                "1 = exercice 1 \n" +
-                                "2 = exercice 3 \n" +
-                                "3 = exercice 4 \n" +
-                                "0 = retournez \n");
-                        System.out.print("saisie");
+                                "1 . exercice 1 \n" +
+                                "2 . exercice 3 \n" +
+                                "3 . exercice 4 \n" +
+                                "0 . retournez \n");
+                        System.out.print("entrez = ");
                         Ex4 = sc.nextInt();
 
                         switch (Ex4){
